@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewContactFragment">
+
+    <EditText
+        android:id="@+id/newContactETName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/newContactETEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newContactETName" />
+
+    <EditText
+        android:id="@+id/newContactETPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:ems="10"
+        android:hint="Phone"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newContactETEmail" />
+
+    <RadioGroup
+        android:id="@+id/newContactRG"
+        android:layout_width="0dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newContactETPhone">
+
+        <RadioButton
+            android:id="@+id/newContactRBCell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cellLabel"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/newContactRBOffice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/officeLabel"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/newContactRBHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/homeLabel"
+            android:textSize="18sp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/newContactBTCancel"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/cancelLabel"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:backgroundTint="#B1A9A9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newContactRG" />
+
+    <Button
+        android:id="@+id/newContactBTSubmit"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:text="@string/submitLabel"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:backgroundTint="#B1A9A9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newContactRG" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

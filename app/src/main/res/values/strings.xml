@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">In Class 07</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="addLabel">Add</string>
+    <string name="cellLabel">Cell</string>
+    <string name="officeLabel">Office</string>
+    <string name="homeLabel">Home</string>
+    <string name="cancelLabel">Cancel</string>
+    <string name="submitLabel">Submit</string>
+    <string name="deleteLabel">Delete</string>
+    <string name="updateLabel">Update</string>
+</resources>
